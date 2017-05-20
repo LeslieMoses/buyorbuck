@@ -38,7 +38,9 @@ module.exports = function(app) {
                 type: req.body.type,
                 color: req.body.color,
                 style: req.body.style,
-                price: req.body.price
+                price: req.body.price, 
+                buy: req.body.buy,
+                buck: req.body.buck,
             }).then(function(dbProducts) {
                 res.json(dbProducts);
             })
