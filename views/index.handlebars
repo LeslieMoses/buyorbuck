@@ -2,31 +2,31 @@
 
 <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
     <div class="row align-center">
-        {{!--
-        <h1 class="text-center"><span id="buyFont">Buy</span>or<span id="buckFont">Buck?</span></h1>--}}
         <!--Product Image Gallery for an eCommerce site to show multiple images of a product.-->
         <div class="product-image-gallery">
             <div class="pdp-product-image" id="main-product-image"></div>
-            <br>
-            <!--CHOICE buy or buck BUTTONS-->
-            <div class="button-hover-reveal-wrapper">
-                <label>WILL BE PULLED FROM IMAGE OBJECT</label>
-                <a href="../buyorbuck/index.html" class="button-hover-reveal">BUY</a>
-                <a href="../buyorbuck/index.html" class="button-hover-reveal">BUCK</a>
-            </div>
-            <br>
-            <br>
-            <ul class="menu product-thumbs align-center">
-                <li>
-                    <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+1"><img src="images/shirtPink.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+2"><img src="http://placehold.it/50x50" alt=""></a>
-                </li>
-                <li>
-                    <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+3"><img src="http://placehold.it/50x50" alt=""></a>
-                </li>
-            </ul>
+
+
+
+
+
+{{!--Update buttons try 05/17--}}
+                <label id="clothesLabel">$2b Pulled From Image Obj</label> 
+
+            <div class="mobile-app-toggle" data-mobile-app-toggle>
+                <button id="buyButton" class="button is-active"><i class="fa fa-star" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Buy</button>
+                <a href="/" <button id="buckButton" class="button">Buck &nbsp;&nbsp;&nbsp;<i class="fa fa-times" aria-hidden="true"></i></a>
+</button>
+                            </div>
+            
+            
+
+          
         </div>
     </div>
 </div>
+
+
+<!-- Our Scripts -->
+{{> javascript/indexJavascript}}
+

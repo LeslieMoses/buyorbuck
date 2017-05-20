@@ -1,25 +1,48 @@
-
-// Renders portions of {{body}} through index.handlebars //
 module.exports = {
-  renderProducts: function(req, res) {
-    res.render('products', {
-      msg: "Welcome! this is data being passed into the render function!"
-    });
-  },
-  renderHome: function(req, res) {
-    // needs to be user obj to fill in all that data
-    // get ("/:
-    // then req.params.id")
-    res.render('index', {
 
-    });
-  },
+    renderHome: function(req, res) {
+        res.render('index', {});
+    },
 
-    renderAbout: function(req, res) {
-    res.render('about', {
+    renderLogin: function(req, res) {
+        res.render('login', {});
+    },
 
-    });
-  }
-  
+    renderUpload: function(req, res) {
+        res.render('upload', {});
+    },
+
+    renderDesigners: function(req, res) {
+        res.render('designers', {});
+    },
+
+    // leslie added this pg 05-18
+     renderDesignerProfile: function(req, res) {
+        res.render('designerProfile', {});
+    },
+
+    renderSignUp: function(req, res) {
+        res.render('signup', {});
+    },
+
+    renderMaleClothing: function(req, res) {
+        res.render('maleclothing', {});
+    },
+
+    renderFemaleClothing: function(req, res) {
+        res.render('femaleclothing', {});
+    },
+
+    renderChildrensClothing: function(req, res) {
+        res.render('childrensclothing', {});
+    },
+
+    renderProfile: function(req, res) {
+        res.render('profile', {});
+    },
+
+    renderFavorites: function(req, res) {
+        res.render('favorites', {});
+    },
+
 };
-

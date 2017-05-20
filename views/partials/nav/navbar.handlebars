@@ -5,65 +5,50 @@
     <br>
     <br>
     <ul class="vertical menu" data-accordion-menu>
-        <li class="navMenuHead"><a href="#">Designers</a> {{!--
-            <ul class="menu vertical nested">--}}
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Meet them</a></li>
-                <li><a href="#">Be one</a></li>
-            </ul>
-        </li>
-        <ul class="vertical menu" data-accordion-menu>
-            <li class="navMenuHead"><a href="#">Search Clothing</a> {{!--
-                <ul class="menu vertical nested">--}}
-                    <li><a href="#">Male</a></li>
-                    <li><a href="#">Female</a></li>
-                    <li><a href="#">Children</a></li>
-                </ul>
-            </li>
-            <ul class="vertical menu" data-accordion-menu>
-                <li class="navMenuHead"><a href="#">You</a> {{!--
-                    <ul class="menu vertical nested">--}}
-                        <li><a href="#">Buys</a></li>
-                        <li><a href="#">Favorites</a></li>
-                    </ul>
-                </li>
-                {{!--another menu formatting option--}} {{!--
-                <ul class="vertical menu">
-                    <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>--}}
-                <br>
-                <br>
-                <br>
-                <ul class="menu simple social-links">
-                    <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                </ul>
+        <li class="navMenuHead"><a href="#">Designers</a>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/designers">Search Designers</a></li>
+            <li><a href="/designerProfile">Designer Profile</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+    </ul>
+    </li>
+    <ul class="vertical menu" data-accordion-menu>
+        <li class="navMenuHead"><a href="#">Search Clothing</a>
+            <li><a href="/maleclothing">Men</a></li>
+            <li><a href="/femaleclothing">Women</a></li>
+            <li><a href="/childrensclothing">Children</a></li>
+    </ul>
+    </li>
+    <ul class="vertical menu" data-accordion-menu>
+        <li class="navMenuHead"><a href="#">You</a>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/favorites">Favorites</a></li>
+    </ul>
+    </li>
+    <br>
+    <br>
+    <br>
+    <ul class="menu simple social-links">
+        <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+    </ul>
 </div>
 <div class="nav-bar">
     <div class="nav-bar-left">
-        <h5 class="text-center"><span id="buyFont">&nbsp;&nbsp;Buy</span>or<span id="buckFont">Buck?</span> <span id="tagFont">&nbsp;&nbsp;tell designers what you'd do...</span></h5>
+        <h5 class="text-center"><a href="/"><span id="buyFont">&nbsp;&nbsp;Buy</span></a>or<span id="buckFont">Buck?</span> <a href="/"><span id="tagFont">&nbsp;&nbsp;tell designers what you like</span></a></h5>
     </div>
     <div class="nav-bar-right">
         <ul class="menu">
-            {{!--click options for main nav--}} {{!--
-            <li class="hide-for-small-only"><a href="#">TOUR</a></li>--}}
-         
-                <li>
-                    {{!--right side off page hidden nav--}}
-                    <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
-                        <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
-                        <div class="hamburger">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </div>
-                    </button>
-                </li>
+            <li>
+                <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </button>
+            </li>
         </ul>
     </div>
 </div>

@@ -22,3 +22,10 @@ $('.card-profile-stats-more-link').click(function(e){
   $(this).next('.card-profile-stats-more-content').slideToggle();
 });
 
+// Buy or Buck buttons
+$('[data-mobile-app-toggle] .button').click(function () {
+  $(this).siblings().removeClass('is-active');
+  $(this).addClass('is-active');
+});
+
+

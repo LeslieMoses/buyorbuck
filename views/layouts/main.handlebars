@@ -1,25 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
     <title>BUY OR BUCK</title>
-
-    <!-- Style Sheets -->
-    <link rel="stylesheet" href="/styles/foundation.css">
-    <link rel="stylesheet" href="/styles/app.css">
-
-    <!-- jQuery JS -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-    <!--google font-->
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Pacifico" rel="stylesheet">
-
-    <!--font awesome-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    
+<!-- Header -->
+{{> nav/head}}
 
 </head>
   <body>
@@ -27,87 +16,11 @@
     <!-- Nav Bar -->
     {{> nav/navbar}}
 
-    <!--new 05-13-17 dashboard-->
-
-<div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
-   <br> <br> <br>
-   <ul class="vertical menu" data-accordion-menu>
-    <li class="navMenuHead"><a href="#">Designers</a>
-      {{!--<ul class="menu vertical nested">--}}
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Meet them</a></li>
-        <li><a href="#">Be one</a></li>
-       </ul>
-    </li>
-    <ul class="vertical menu" data-accordion-menu>
-    <li class="navMenuHead"><a href="#">Search Clothing</a>
-      {{!--<ul class="menu vertical nested">--}}
-        <li><a href="#">Male</a></li>
-        <li><a href="#">Female</a></li>
-        <li><a href="#">Children</a></li>
-       </ul>
-     </li>
-     <ul class="vertical menu" data-accordion-menu>
-    <li class="navMenuHead"><a href="#">You</a>
-      {{!--<ul class="menu vertical nested">--}}
-        <li><a href="#">Buys</a></li>
-        <li><a href="#">Favorites</a></li>
-       </ul>
-    </li>
-  {{!--another menu formatting option--}}
-    {{!--<ul class="vertical menu">
-        <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Support</a></li>
-    </ul>--}}
-   
-    <br><br><br>
-    <ul class="menu simple social-links">
-        <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-        
-    </ul>
-</div>
-    <div class="nav-bar">
-        <div class="nav-bar-left">
-            <h5 class="text-center"><span id="buyFont">&nbsp;&nbsp;Buy</span>or<span id="buckFont">Buck?</span> <span id="tagFont">&nbsp;&nbsp;tell designers what you'd do...</span></h5>
-        </div>
-        <div class="nav-bar-right">
-            <ul class="menu">
-                {{!--click options for main nav--}}
-                {{!--<li class="hide-for-small-only"><a href="#">TOUR</a></li>--}}
-                
-                <li>
-                    <li>
-                        {{!--right side off page hidden nav--}}
-                        <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
-                            <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
-                            <div class="hamburger">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </div>
-                        </button>
-                    </li>
-            </ul>
-        </div>
-    </div>
-        {{{body}}}
- 
-</div>
- 
+    <!-- Body -->
+    {{{body}}}
     
     <!-- Foundation Scripts -->
-    <script src="/javascript/vendor/jquery.js"></script>
-    <script src="/javascript/vendor/what-input.js"></script>
-    <script src="/javascript/vendor/foundation.js"></script>
-    <script src="/javascript/app.js"></script>
-    
-    <!-- Our Scripts -->
-    <script type="text/javascript" src="/javascript/mainhandlebars.js"> </script>
+    {{> javascript/foundationjs}}
 
   </body>
-</html>
+</html> 
