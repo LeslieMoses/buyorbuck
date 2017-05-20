@@ -23,11 +23,11 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: true
         },
         buy: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.INTEGER(11),
             allowNull: false
         },
         buck: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.INTEGER(11),
             allowNull: false
         },
         createdAt: {

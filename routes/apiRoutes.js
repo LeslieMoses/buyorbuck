@@ -27,20 +27,32 @@ module.exports = function(app) {
     // GET route for getting all of the current products
     app.get("/api/currentproducts", function(req, res) {
         db.CurrentProduct.findAll({
-            order: [Sequelize.fn('RAND')]}).then(function(dbCurrentProduct) {
+            order: [Sequelize.fn('RAND')]
+        }).then(function(dbCurrentProduct) {
             res.json(dbCurrentProduct);
         });
     });
 
-    // POST route for saving product
+    // PUT route for updating products
+    app.put("/api/products", function(req, res) {
+        db.Products.update(
+            req.body, {
+                where: {
+                    buy: req.body.buy,
+                    buck: req.body.buck,
+                }
+            }).then(function(dbProducts) {
+            res.json(dbProducts);
+        });
+    });
+
+    // POST route for saving new product
     app.post("/api/products", function(req, res) {
         db.Products.create({
                 type: req.body.type,
                 color: req.body.color,
                 style: req.body.style,
-                price: req.body.price, 
-                buy: req.body.buy,
-                buck: req.body.buck,
+                price: req.body.price,
             }).then(function(dbProducts) {
                 res.json(dbProducts);
             })
