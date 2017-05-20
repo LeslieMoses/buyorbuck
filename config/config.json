@@ -12,6 +12,8 @@
         "password": "123456789",
         "port": 3306,
         "database": "test_db",
+        "password": "root",
+        "database": "burgers_db",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
@@ -19,4 +21,5 @@
         "dialect": "mysql",
         "use_env_variable": "JAWSDB_URL"
     }
-}
+  
+}  
