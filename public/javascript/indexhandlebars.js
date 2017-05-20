@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     $.get("/api/currentproducts", function(data) {
         for (var i = 0; i < data.length; i++) {
+        	var imageArray = [];
             var img = data[i].url;
             var price = data[i].price;
             var type = data[i].type;
