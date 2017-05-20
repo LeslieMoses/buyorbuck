@@ -27,10 +27,7 @@ module.exports = function(app) {
     // GET route for getting all of the current products
     app.get("/api/currentproducts", function(req, res) {
         db.CurrentProduct.findAll({
-            order: [
-                [Sequelize.fn('RAND')]
-            ]
-        }).then(function(dbCurrentProduct) {
+            order: [Sequelize.fn('RAND')]}).then(function(dbCurrentProduct) {
             res.json(dbCurrentProduct);
         });
     });
