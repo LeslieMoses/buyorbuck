@@ -4,7 +4,6 @@
 
 // Dependencies
 // =============================================================
-var testApiController = require('../controllers/testApi');
 var Sequelize = require('sequelize');
 
 // Requiring our models
@@ -13,9 +12,6 @@ var db = require("../models");
 // Routes
 // =============================================================
 module.exports = function(app) {
-
-    // GET route for testing  
-    app.get('/test', testApiController.index);
 
     // GET route for getting all of the designers
     app.get("/api/designers", function(req, res) {
