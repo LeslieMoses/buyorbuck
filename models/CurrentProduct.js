@@ -10,6 +10,22 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING(255),
             allowNull: true
         },
+        color: {
+            type: DataTypes.STRING(255),
+            allowNull: true
+        },
+        price: {
+            type: DataTypes.INTEGER(11),
+            allowNull: true
+        },
+        type: {
+            type: DataTypes.STRING(255),
+            allowNull: true
+        },
+        style: {
+            type: DataTypes.STRING(255),
+            allowNull: true
+        },
         createdAt: {
             type: DataTypes.DATE,
             allowNull: true,
