@@ -69,4 +69,19 @@ module.exports = function(app) {
         });
     });
 
+    // POST route for saving new product
+    app.post("/api/users", function(req, res) {
+        db.Users.create({
+                name: req.body.name,
+                email: req.body.email,
+                password: req.body.password,
+            }).then(function(dbUsers) {
+                res.json(dbUsers);
+            })
+            .catch(function(error) {
+                console.log(error.message);
+                res.status(500).json({ error: error.message });
+            });
+    });
+
 };
