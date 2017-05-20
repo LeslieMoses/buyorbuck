@@ -17,24 +17,18 @@ module.exports = function(app) {
   app.get('/test', testApiController.index);
 
   // GET route for getting all of the designers
-  app.get("/api/designer", function(req, res) {
-    var query = {};
-    db.Designer.findAll({
-      where: query
-    }).then(function(dbDesigner) {
-      res.json(dbDesigner);
+  app.get("/api/designers", function(req, res) {
+    db.Designers.findAll({}).then(function(dbDesigners) {
+      res.json(dbDesigners);
     });
   });
 
-  // // GET route for getting all of the current Products
-  // app.get("/api/currentproducts", function(req, res) {
-  //   var query = {};
-  //   db.CurrentProduct.findAll({
-  //     where: query
-  //   }).then(function(dbCurrentProduct) {
-  //     res.json(dbCurrentProduct);
-  //   });
-  // });
+  // GET route for getting all of the current Products
+  app.get("/api/currentproducts", function(req, res) {
+    db.CurrentProduct.findAll({}).then(function(dbCurrentProduct) {
+      res.json(dbCurrentProduct);
+    });
+  });
 
     // GET route for getting all of the current Products
   app.get("/api/products", function(req, res) {

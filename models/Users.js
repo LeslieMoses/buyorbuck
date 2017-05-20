@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    return sequelize.define('Designers', {
+    return sequelize.define('Users', {
         id: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
@@ -18,14 +18,6 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING(255),
             allowNull: true
         },
-        type: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
-        bio: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
         createdAt: {
             type: DataTypes.DATE,
             allowNull: true,
@@ -37,6 +29,6 @@ module.exports = function(sequelize, DataTypes) {
             defaultValue: null
         }
     }, {
-        tableName: 'Designers'
+        tableName: 'Users'
     });
 };

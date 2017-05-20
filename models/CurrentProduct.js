@@ -1,28 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
-    return sequelize.define('Designers', {
+    return sequelize.define('CurrentProduct', {
         id: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
-        email: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
-        password: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
-        type: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
-        bio: {
+        url: {
             type: DataTypes.STRING(255),
             allowNull: true
         },
@@ -37,6 +21,6 @@ module.exports = function(sequelize, DataTypes) {
             defaultValue: null
         }
     }, {
-        tableName: 'Designers'
+        tableName: 'CurrentProduct'
     });
 };
