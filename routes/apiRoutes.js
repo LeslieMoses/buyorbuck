@@ -23,27 +23,33 @@ module.exports = function(app) {
     });
   });
 
-  // GET route for getting all of the current Products
+  // GET route for getting all of the current products
   app.get("/api/currentproducts", function(req, res) {
     db.CurrentProduct.findAll({}).then(function(dbCurrentProduct) {
       res.json(dbCurrentProduct);
     });
   });
 
-    // GET route for getting all of the current Products
-  app.get("/api/products", function(req, res) {
-    var query = {};
-    db.Product.findAll({
-      where: query
-    }).then(function(dbProduct) {
-      res.json(dbProduct);
+  // POST route for saving product
+  app.post("/api/products", function(req, res) {
+    db.Products.create({
+      type: req.body.type,
+      color: req.body.color, 
+      style: req.body.style, 
+      price: req.body.price
+    }).then(function(dbProducts) {
+      res.json(dbProducts);
+    })
+    .catch(function (error) {
+      console.log(error.message);
+      res.status(500).json({error: error.message});
     });
   });
 
-  // POST route for saving a new post
+  // POST route for saving a new designer
   app.post("/api/designer", function(req, res) {
-    db.Designer.create(req.body).then(function(dbPost) {
-      res.json(dbDesigner);
+    db.Designers.create(req.body).then(function(dbDesigners) {
+      res.json(dbDesigners);
     });
   });
 
