@@ -10,7 +10,7 @@ INSERT INTO Designers (name, email, password, type, city, src, bio)
 VALUES ("Nole Tubari", "Nole.Tubari@gmail.com", "Pasw0rd", "Women's Clothing", "Miami", "styles/images/HDSTNoley.jpg", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.");
 
 INSERT INTO Designers (name, email, password, type, city, src, bio)
-VALUES ("Ami Santenelli", "Ami.Santenelli@gmail.com", "Pasw0rd", "Children's Clothing", "Chicago", "styles/images/HDSTNoley.jpg", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.");
+VALUES ("Ami Santenelli", "Ami.Santenelli@gmail.com", "Pasw0rd", "Children's Clothing", "Chicago", "styles/images/HDSTAmi.jpg", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.");
 
 INSERT INTO Designers (name, email, password, type, city, src, bio)
 VALUES ("Laura Usery", "Laura.Usery@gmail.com", "Pasw0rd", "Men's Clothing", "San Diego", "styles/images/HDSTLaura.jpg", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.");
